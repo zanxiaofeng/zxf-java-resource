@@ -1,0 +1,25 @@
+*****Resource-A.getResource
+file:/home/davis/Davis/zxf-java-resource/java-resource-a/target/classes/zxf/java/resource/a/about.txt
+file:/home/davis/Davis/zxf-java-resource/java-resource-a/target/classes/about.txt
+*****Resource-A.getClassLoader().getResource
+file:/home/davis/Davis/zxf-java-resource/java-resource-a/target/classes/about.txt
+*****Resource-A.getClassLoader().getResources*
+file:/home/davis/Davis/zxf-java-resource/java-resource-a/target/classes/about.txt
+#####ClassLoader.getSystemResource
+file:/home/davis/Davis/zxf-java-resource/java-resource-a/target/classes/about.txt
+#####ClassLoader.getSystemResources*
+file:/home/davis/Davis/zxf-java-resource/java-resource-a/target/classes/about.txt
+@@@@@ClassLoader.getSystemClassLoader().getResource
+file:/home/davis/Davis/zxf-java-resource/java-resource-a/target/classes/about.txt
+@@@@@ClassLoader.getSystemClassLoader().getResources*
+file:/home/davis/Davis/zxf-java-resource/java-resource-a/target/classes/about.txt
+$$$$$Thread.currentThread().getContextClassLoader().getResource
+file:/home/davis/Davis/zxf-java-resource/java-resource-a/target/classes/about.txt
+$$$$$Thread.currentThread().getContextClassLoader().getResources*
+file:/home/davis/Davis/zxf-java-resource/java-resource-a/target/classes/about.txt
+#######################################################################################################
+About in zxf.java.resource.a(java-resource-a).
+#######################################################################################################
+file:/home/davis/Davis/zxf-java-resource/java-resource-a/target/classes/about.txt:
+About in java-resource-a.
+#######################################################################################################
