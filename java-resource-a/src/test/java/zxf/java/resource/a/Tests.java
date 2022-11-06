@@ -45,7 +45,13 @@ public class Tests {
         Collections.list(Thread.currentThread().getContextClassLoader().getResources("about.txt")).forEach(url -> {
             try {
                 System.out.println(url + ":");
-                if ("jar".equalsIgnoreCase(url.getProtocol())) {
+                if ("file".equalsIgnoreCase(url.getProtocol())) {
+                    byte[] context = Files.readAllBytes(Paths.get(url.toURI()));
+                    System.out.println(new String(context));
+
+                } else {
+                    assert "jar".equalsIgnoreCase(url.getProtocol());
+
                     if (false) {
                         //approach 1
                         JarURLConnection urlConnection = (JarURLConnection) url.openConnection();
@@ -53,9 +59,6 @@ public class Tests {
                         System.out.println(new String(context));
                     }
                     byte[] context = IOUtils.readAllBytes(url.openStream());
-                    System.out.println(new String(context));
-                } else {
-                    byte[] context = Files.readAllBytes(Paths.get(url.toURI()));
                     System.out.println(new String(context));
                 }
             } catch (Exception ex) {
